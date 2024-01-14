@@ -40,8 +40,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
 	background: #fff;
 	font-family: helvetica, sans-serif;
 	padding: 5%;
-	max-width: 70em;
-	font-size: 1.2em;
+	max-width: 50em;
+	font-size: calc( 1.2em + (1vh + 0.5vw / 2) / 2);
 	line-height: 1.4;
 	margin: 0 auto; 
 }
@@ -90,10 +90,17 @@ a:hover {
 .home #site-header img:hover {
 	transform: rotate(0deg);
 }
+#site-header img {
+	transform: rotate(0deg);
+		transition: transform 0.5s ease-in-out;
 
-* {
-	transition: all 0.5s ease-in-out;
 }
+
+.home #site-header {
+	min-height: 50vh
+}
+
+
 #site-header img, #site-header h1 {
 	margin: 0 0 -0.1em 0;
 	padding: 0;
@@ -177,6 +184,12 @@ span {
 	max-width: 100%;
 	height: auto;
 	width: auto;
+}
+
+.largertext {
+	font-size: 2em;
+	font-weight: lighter;
+	line-height: 1.2;
 }</style>
 		</head>
 <body class="blog">

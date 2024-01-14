@@ -45,8 +45,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
 	background: #fff;
 	font-family: helvetica, sans-serif;
 	padding: 5%;
-	max-width: 70em;
-	font-size: 1.2em;
+	max-width: 50em;
+	font-size: calc( 1.2em + (1vh + 0.5vw / 2) / 2);
 	line-height: 1.4;
 	margin: 0 auto; 
 }
@@ -95,10 +95,17 @@ a:hover {
 .home #site-header img:hover {
 	transform: rotate(0deg);
 }
+#site-header img {
+	transform: rotate(0deg);
+		transition: transform 0.5s ease-in-out;
 
-* {
-	transition: all 0.5s ease-in-out;
 }
+
+.home #site-header {
+	min-height: 50vh
+}
+
+
 #site-header img, #site-header h1 {
 	margin: 0 0 -0.1em 0;
 	padding: 0;
@@ -182,6 +189,12 @@ span {
 	max-width: 100%;
 	height: auto;
 	width: auto;
+}
+
+.largertext {
+	font-size: 2em;
+	font-weight: lighter;
+	line-height: 1.2;
 }</style>
 		</head>
 <body class="home page-template-default page page-id-18">
@@ -206,25 +219,66 @@ span {
 		
 
 				
-		  <p></p>
+		  <p>
+</p>
+<p class="largertext">We&#8217;re a brand strategy studio in Brisbane, Australia, helping small to medium sized business get clarity, save money on design and marketing, and get moving at full roar.</p>
+
+
+
 <p><strong>Bored af with all the same-same shit?</strong><br>
 You need a brand for your business. You look around for inspiration, but what you find seems pretty unoriginal &#8211; boring even. This isn&#8217;t what you want.</p>
+
+
+
 <p><strong>Want to do it different/better but don’t know what that looks like or where to start?</strong><br>
 You need Monsta to reach down your throat, rip out your innards, and arrange them into a brand.</p>
+
+
+
 <p>Monster metaphors aside, Monsta brands are different because they are designed to motivate your customers and your team. We not only make them with you, we make them out of you (roar). It&#8217;s alchemy really, and there&#8217;s nothing we&#8217;d rather be doing.</p>
-<h2>What we do</h2>
+
+
+
+<h2 class="wp-block-heading">What we do</h2>
+
+
+
 <ul>
 <li>Brand strategy</li>
+
+
+
 <li>Visual stylescapes</li>
+
+
+
 <li>Messaging + copywriting</li>
+
+
+
 <li><a href="/youtube-strategy/">YouTube branding</a></li>
 </ul>
-<h2>More on branding</h2>
+
+
+
+<h2 class="wp-block-heading">More on branding</h2>
+
+
+
 <ul>
 <li>Branding basics &#8211; how it works</li>
+
+
+
 <li>Our brand strategy process</li>
 </ul>
-<h3>Other branding related info</h3>
+
+
+
+<h3 class="wp-block-heading">Other branding related info</h3>
+
+
+
 <ul>
 <li><a href="/why-designers-make-everything-complicated/">Simple is Scary</a></li>
 </ul>
