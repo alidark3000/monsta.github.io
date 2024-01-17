@@ -42,7 +42,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
 <link rel="apple-touch-icon" href="/wp-content/uploads/2024/01/cropped-monstamark-180x180.jpg">
 <meta name="msapplication-TileImage" content="/wp-content/uploads/2024/01/cropped-monstamark-270x270.jpg">
 		<style type="text/css" id="wp-custom-css">body {
-	background: #fff;
+	background: #f7f7f7;
 	font-family: helvetica, sans-serif;
 	padding: 5%;
 	max-width: 50em;
@@ -50,20 +50,34 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
 	line-height: 1.4;
 	margin: 0 auto; 
 	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+	
 }
  .headerimg {
 	max-width: 100px;
+	mix-blend-mode: multiply;
+}
+.multiply {
+	mix-blend-mode: multiply;
 }
 .home .headerimg {
 	max-width: 500px;
 	max-height: 30vh;
+	
 }
 
+p.descriotion {
+	align-self: end;
+	justify-self: start;
+	flex-grow: grow;
+	flex-basis: 100%;
+	font-weight: 300;
+	margin: 0;
+}
 a, a:visited { 
-	color: red; text-decoration: none;
+	color: black; text-decoration: none; background: yellow;
 }
 a:hover {
-	text-decoration: underline;
+	background: white;
 }
 
  ul#menu-mainmenu, .menu {
@@ -213,6 +227,10 @@ span {
 	background: black;
 	color: white;
 	padding: 5% 7%;
+}
+
+#site-footer iframe {
+	margin-top: 5%;
 }</style>
 		</head>
 <body class="page-template-default page page-id-115">
