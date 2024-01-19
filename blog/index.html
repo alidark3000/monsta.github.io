@@ -103,12 +103,14 @@ a:hover {
    font-weight: bold;
 	margin-bottom: 5vw;
 }
-
-#site-header img:hover {
+.transparent {
+	background: transparent!important;
+}
+#site-header img.homelink:hover {
 	transform: rotate(180deg);
 	transition: transform 0.2s ease-in-out;
 }
-.home #site-header img:hover {
+.home #site-header img.homelink:hover {
 	transform: rotate(0deg);
 }
 #site-header img {
@@ -164,7 +166,11 @@ span {
 	font-size: 2em;
 	line-height: 0.8;
 }
-.home .wordmark { font-size: 4em;}
+.wordmark img {
+	max-width: 270px;
+}
+.home .wordmark img { max-width: 300px;}
+
 @media (max-width: 1000px) {
 	#site-header {
 		flex-direction: column;
@@ -238,9 +244,9 @@ span {
     <header id="site-header">
 
 	
-	<a class="transparent" href="/"><img class="headerimg" src="/wp-content/uploads/2024/01/monsta-1.jpg" alt="mOnStA sTuDiO"></a>
+	<a class="transparent" href="/"><img class="headerimg homelink" src="/wp-content/uploads/2024/01/monsta-1.jpg" alt="mOnStA sTuDiO"></a>
 	<div class="right">
-		<div class="wordmark">MONSTA</div>
+			<div class="wordmark"><img src="/wp-content/uploads/2024/01/MoNstA-2.jpg" alt="MoNstA" class="multiply"></div>
 			<div class="menu-mainmenu-container"><ul id="menu-mainmenu" class="menu">
 <li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="/about/">About</a></li>
 <li id="menu-item-100" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-84 current_page_item current_page_parent menu-item-100"><a href="/blog/" aria-current="page">Blog</a></li>
@@ -253,6 +259,22 @@ span {
 
 
               <article>
+  <h2><a href="/not-all-branding-is-personal-but-it-should-be/">Not all branding is personal, but it should be.</a></h2>
+  <p></p>
+</article> 
+
+
+
+ <article>
+  <h2><a href="/whats-the-difference-between-branding-brand-strategy-brand-identity-design/">What&#8217;s the difference between branding, brand strategy, and brand identity design?</a></h2>
+  <p></p>
+<p>“Branding” means the entire process of creating a brand&#8230;.</p>
+
+</article> 
+
+
+
+ <article>
   <h2><a href="/branding-is-more-important-than-your-website/">Why making a website is so hard</a></h2>
   <p></p>
 <p>Hi homies. TLDR: Your website is hard to make because you don&#8217;t have the clarity you need- the clarity that brand strategy and a little branding will get you. You&#8217;ve skipped a crucial step and you&#8217;re going to pay for it forever. Let me get this straight: it&#8217;s ok to make your own website and [&hellip;]</p>
@@ -302,7 +324,7 @@ span {
 
 	<footer id="site-footer">
 	
-		<p>© Monsta. </p>
+		<p>© MoNstA. </p>
 		<p>Monsta does not use AI generated content. This is content completely original and the result of years of experience and study.</p>
 		<iframe src="https://studiomonsta.gumroad.com/subscribe" width="100%" height="500px" style="border: 10px solid black;"></iframe>
 

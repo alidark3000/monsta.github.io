@@ -109,12 +109,14 @@ a:hover {
    font-weight: bold;
 	margin-bottom: 5vw;
 }
-
-#site-header img:hover {
+.transparent {
+	background: transparent!important;
+}
+#site-header img.homelink:hover {
 	transform: rotate(180deg);
 	transition: transform 0.2s ease-in-out;
 }
-.home #site-header img:hover {
+.home #site-header img.homelink:hover {
 	transform: rotate(0deg);
 }
 #site-header img {
@@ -170,7 +172,11 @@ span {
 	font-size: 2em;
 	line-height: 0.8;
 }
-.home .wordmark { font-size: 4em;}
+.wordmark img {
+	max-width: 270px;
+}
+.home .wordmark img { max-width: 300px;}
+
 @media (max-width: 1000px) {
 	#site-header {
 		flex-direction: column;
@@ -244,9 +250,9 @@ span {
     <header id="site-header">
 
 	
-	<a class="transparent" href="/"><img class="headerimg" src="/wp-content/uploads/2024/01/monsta-1.jpg" alt="mOnStA sTuDiO"></a>
+	<a class="transparent" href="/"><img class="headerimg homelink" src="/wp-content/uploads/2024/01/monsta-1.jpg" alt="mOnStA sTuDiO"></a>
 	<div class="right">
-		<div class="wordmark">MONSTA</div>
+			<div class="wordmark"><img src="/wp-content/uploads/2024/01/MoNstA-2.jpg" alt="MoNstA" class="multiply"></div>
 			<div class="menu-mainmenu-container"><ul id="menu-mainmenu" class="menu">
 <li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="/about/">About</a></li>
 <li id="menu-item-100" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-100"><a href="/blog/">Blog</a></li>
@@ -357,7 +363,7 @@ span {
 
 	<footer id="site-footer">
 	
-		<p>© Monsta. </p>
+		<p>© MoNstA. </p>
 		<p>Monsta does not use AI generated content. This is content completely original and the result of years of experience and study.</p>
 		<iframe src="https://studiomonsta.gumroad.com/subscribe" width="100%" height="500px" style="border: 10px solid black;"></iframe>
 
