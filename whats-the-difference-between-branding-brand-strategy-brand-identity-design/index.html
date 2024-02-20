@@ -45,31 +45,32 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
 <link rel="apple-touch-icon" href="/wp-content/uploads/2024/01/cropped-monstamark-180x180.jpg">
 <meta name="msapplication-TileImage" content="/wp-content/uploads/2024/01/cropped-monstamark-270x270.jpg">
 		<style type="text/css" id="wp-custom-css">body {
-	background: #f7f7f7;
+	background: black;
 	font-family: helvetica, sans-serif;
-	padding: 5%;
-	max-width: 50em;
 	font-size: 1.5em;
 	line-height: 1.4;
 	margin: 0 auto; 
 	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-	
+	color: white;
 }
  .headerimg {
 	max-width: 100px;
-	mix-blend-mode: multiply;
 }
 .multiply {
 	mix-blend-mode: multiply;
 }
+
+.dontmultiply {
+	mix-blend-mode: normal;
+}
 .home .headerimg {
-	max-width: 500px;
-	max-height: 30vh;
-	
+	width: 100%;
+	max-width: 20000px;	
+	z-index: 0;
 }
 
 img {
-	mix-blend-mode: multiply;
+/	mix-blend-mode: multiply;
 }
 
 a.transparent {
@@ -86,7 +87,7 @@ p.descriotion {
 	font-size: 1.5em;
 }
 a, a:visited { 
-	color: black; text-decoration: underline;   text-decoration-color: #EE2C2C;
+	color: #999; text-decoration: underline;   text-decoration-color: #EE2C2C;
 	text-decoration-thickness: 4px;
 
 }
@@ -118,16 +119,23 @@ a:hover {
 	padding-left: 1em;
 }
 
+.menu a {
+	color: red;
+}
+
 #site-header h1, #site-header p, .menu ul, .menu {
 	display: inline;
 }
 
 #site-header {
-	display: flex;
+//	display: flex;
 	align-items: top;
 	justify-content: space-between;
    font-weight: bold;
-	margin-bottom: 5vw;
+	margin-bottom: 0;
+	background: black;
+	color: white;
+	padding: 0 0;
 }
 .transparent {
 	background: transparent!important;
@@ -145,12 +153,21 @@ a:hover {
 
 }
 
-.home #site-header {
-	/ max-height: 50vh
-		
+
+
+
+.homeheader {
+	background: url(/wp-content/uploads/2024/02/monsta-header3.jpg) bottom center;
+	background-size: cover;
+	min-height: 80vh;
+	max-width: 100%;
 }
-.home #site-header h1 {
-	display: none;
+
+.home #site-header img {
+	transition: none;
+	transform: none;
+	max-width: 100%;
+	margin-bottom: -7vw;
 }
 
 
@@ -165,7 +182,10 @@ a:hover {
 	justify-content: space-between;
 }
 .home .right {
-	width: 100%;
+	max-width: 50em;
+	padding: 0 5%;
+	margin: 0 auto;
+	z-index: 999;
 }
 
 #site-heder h1 {margin-top: 0; margin: 0!important;padding: 0;}
@@ -175,8 +195,26 @@ a:hover {
 	align-items: center;
 }
 
+.single #site-header, .archive #site-header, .blog #site-header {
+	max-width: 50em;
+	margin: 0 auto;
+	padding: 0 5%;
+}
+
+article {
+	max-width: 50em;
+	margin: 0 auto;
+	padding: 5%;
+}
 
 
+.entry-content {
+	padding:  5% 5%;
+	max-width: 50em;
+	margin: 0 auto;
+/	background: black; 
+	color: white;
+}
 
 
 .entry-content *:first-child {
@@ -271,8 +309,9 @@ a:hover {
 }
 
 #site-footer {
-	font-size: 0.8em;
 	color: #999;
+		margin: 0 auto;
+	max-width: 50em;
 }
 
 .alert {
@@ -292,7 +331,7 @@ a:hover {
 }
 
 #site-footer iframe {
-	margin-top: 5%;
+
 }
 .flexed {
 	display: flex;
@@ -352,8 +391,7 @@ img.fullwidth {
 
 				<h1>What&#8217;s the difference between branding, brand strategy, and brand identity design?</h1>
 		
-		  <p>
-</p>
+		  
 <p>These terms are often confused, and I admit, it&#8217;s a little confusing looking from the outside. </p>
 
 
@@ -387,7 +425,6 @@ img.fullwidth {
 
 
 <p> </p>
-
 
 
 	</div>
